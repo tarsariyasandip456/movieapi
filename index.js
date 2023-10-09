@@ -8,7 +8,6 @@ import NodeCache from "node-cache";
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
 const cache = new NodeCache();
-// parse application/json
 app.use(bodyParser.json())
 
 const corsOpts = {
